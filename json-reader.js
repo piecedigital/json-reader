@@ -19,12 +19,14 @@ var object = {
 }
 
 // this is an array of all of the internal objects we want to read into
-var arr = ["object","object","object","object","object"];
+var array = "object/object/object/object/object".split("/");
 
 // this function reads into a given object for a depth of a given distence
-var findWithin = function(obj, num) {
-	// this assigns a referenc variable to the given object
+var findWithin = function(obj, arr, num) {
+	// this assigns a reference variable to the given object
 	var data = obj;
+	// this assigns a variable to the given array
+	var arr = arr;
 	// i is set outside of the loop to be access
 	// after the loop ends to edit the desired object
 	var i;
@@ -33,15 +35,15 @@ var findWithin = function(obj, num) {
 		data = data[arr[i]] || {};
 	}
 	// this adds a key 'finish' with a value of 'true' to our desired object
-	data[arr[i]].finish = true;
+	data.finish = true;
 	// returns the object that data is inside
 	return data;
 }
 // calls the function with the necessary arguments
 // assigns a variable to our returned data
-var returnedData = findWithin(object, 4);
+var returnedData = findWithin(object, array, 5);
 
-console.log("------------reference object-------------: \n", data);
+console.log("------------reference object-------------: \n", returnedData);
 console.log();
 console.log("------------original object--------------: \n", JSON.stringify(object));
 
@@ -53,4 +55,4 @@ info.twitter = "@PieceDigital";
 info.website = "piecedigital.github.io";
 info.linkedin = "linkedin.com/in/pdstudios";
 
-console.log(name);
+console.log(creator);

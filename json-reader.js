@@ -19,7 +19,11 @@ var object = {
 }
 
 // this is an array of all of the internal objects we want to read into
-var array = "object/object/object/object/object".split("/");
+var array = "/object/object/object/object/object".split("/");
+// because there is a slash at the beginnig of our newly created array
+// array will have an empty string at the first index.
+// array.shift() will remove this empty cell and leave our array obstruction free
+array.shift()
 
 // this function reads into a given object for a depth of a given distence
 var findWithin = function(obj, arr, num) {
@@ -43,6 +47,9 @@ var findWithin = function(obj, arr, num) {
 // assigns a variable to our returned data
 var returnedData = findWithin(object, array, 5);
 
+// console logs our data for visibility
+console.log("-----------------array-------------------: \n", array);
+console.log();
 console.log("------------reference object-------------: \n", returnedData);
 console.log();
 console.log("------------original object--------------: \n", JSON.stringify(object));

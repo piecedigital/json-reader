@@ -43,7 +43,7 @@ var returnedData = findWithin(object, 4);
 
 console.log("------------reference object-------------: \n", data);
 console.log();
-console.log("------------original object--------------: \n", JSON.stringify(object, null, "\n"));
+console.log("------------original object--------------: \n", JSON.stringify(object));
 
 // created by me :)
 var creator ={};

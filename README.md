@@ -5,4 +5,4 @@ The idea behind it is that you could use a given path from a URL (e.g., "/some/c
 
 This has been done before, I'm certain, but I was glad that I came up with it on my own. :D
 
--Darryl Dixon, a.k.a., [http://twitter.com/piecedigital](@PieceDigital)
+-Darryl Dixon, a.k.a., (http://twitter.com/piecedigital)[@PieceDigital]

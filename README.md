@@ -33,6 +33,7 @@ var object = {
 	}
 }
 ```
+
 Imagine this is an object in your database and it represents your file structure.
 
 Now consider the following string to array:
@@ -44,6 +45,7 @@ var array = "/object/object/object/object/object".split("/");
 // array.shift() will remove this empty cell and leave our array obstruction free
 array.shift()
 ```
+
 Imagine this is a URL of your website. You want to use this URL to write to your object.
 
 But how would you do that dynamically without hard-coding in the operation?
@@ -75,6 +77,7 @@ var findWithin = function(obj, arr, num, cb) {
 	return data;
 }
 ```
+
 And this is how we'll write to the object. So how would you use it? I'll explain it a little deeper:
 ```js
 var findWithin = function(Object, Array, Number, Callback) {...}
@@ -87,6 +90,7 @@ var findWithin = function(Object, Array, Number, Callback) {...}
 // Callback - this is the callback we'll pass. This call back will perform the desired operation
 // ... at the desired location in the object
 ```
+
 This is an example of a callback
 ```js
 // this is our callback to modify data within
@@ -96,15 +100,17 @@ var callback = function(data) {
 	data.finish = true;
 }
 ```
+
 Now we can finally call 'findWithin' and pass out callback
 ```js
 // calls the function with the necessary arguments
 // assigns a variable to our returned data
 var returnedData = findWithin(object, array, null, callback);
 ```
+
 the variable `returnedData` will be equal to the modified object within our object.
 These console logs will bring clarity.
-```ja
+```js
 // console logs our data for visibility
 // This shows the arry passed
 console.log("-----------------array-------------------: \n", array);
@@ -128,6 +134,7 @@ info.linkedin = "http://linkedin.com/in/pdstudios";
 
 console.log(creator);
 ```
+The file `json-reader.js` is ready to run in your command line console/terminal using Node, or in the console of your favorite web browser! (it better be Chrome) ;)
 
 # Thanks for viewing! :)
 ### Checkout my links below

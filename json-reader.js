@@ -30,13 +30,19 @@ var findWithin = function(obj, arr, num, cb) {
 	// this assigns a reference variable to the given object
 	var data = obj;
 	// this assigns a variable to the given array
-	var arr = arr;
-	// i is set outside of the loop to be access
-	// after the loop ends to edit the desired object
-	var i;
+	if(typeof arr === "object") {
+		arr = arr;
+	} else {
+		arr = arr.split("/");
+		if(!arr[0]) {
+			arr.shift();
+		}
+	}
+	
+	num = num || arr.length-1;
 	for(i = 0; i < num; i++) {
 		// this essentially steps deeper into the object referenced and assigns 'data' to it
-		data = data[arr[i]] || {};
+		data = data[arr[i]] || data;
 	}
 	// this this uses are callback provided.
 	// here we pass 'data' as our argument to it so that it can modify the data as needed

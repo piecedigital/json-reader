@@ -5,7 +5,9 @@ The idea behind it is that you could use a given path from a URL (e.g., "/some/c
 
 This has been done before, I'm certain, but I was glad that I came up with it on my own. :D
 
-Let's dive into what it does.
+---
+
+## Let's dive into what it does.
 
 As your read through the following, do note that the comments to much of the explaining.
 
@@ -127,6 +129,7 @@ info.linkedin = "http://linkedin.com/in/pdstudios";
 console.log(creator);
 ```
 
-Thanks for viewing!
+# Thanks for viewing! :)
+### Checkout my links below
 
 [Twitter](http://twitter.com/PieceDigital) | [Github](piecedigital.github.io) | [LinkedIn](linkedin.com/in/pdstudios)

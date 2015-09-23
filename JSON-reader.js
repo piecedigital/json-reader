@@ -39,7 +39,7 @@ var findWithin = function(obj, arr, num, cb) {
 		}
 	}
 	
-	num = num || arr.length-1;
+	num = num || arr.length;
 	for(i = 0; i < num; i++) {
 		// this essentially steps deeper into the object referenced and assigns 'data' to it
 		data = data[arr[i]] || data;

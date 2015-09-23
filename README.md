@@ -65,7 +65,7 @@ var findWithin = function(obj, arr, num, cb) {
       arr.shift();
     }
 	}
-	num = num || arr.length-1;
+	num = num || arr.length;
 	for(i = 0; i < num; i++) {
 		// this essentially steps deeper into the object referenced and assigns 'data' to it
 		data = data[arr[i]] || data;
@@ -140,6 +140,8 @@ info.linkedin = "http://linkedin.com/in/pdstudios";
 console.log(creator);
 ```
 The file `json-reader.js` is ready to run in your command line console/terminal using Node, or in the console of your favorite web browser! (it better be Chrome) ;)
+
+Here's a working example. Keep in mind, the example is very simplified.
 
 # Thanks for viewing! :)
 ### Checkout my links below

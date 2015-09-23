@@ -84,10 +84,15 @@ var findWithin = function(Object, Array, Number, Callback) {...}
 // Object - this is the object we want to read/write to, like the object we have at the top
 // Array - this will carry the keys of the objects within Object that we want to read/write
 // ... this will likely be a URL turned into this array
-// ... either an array or URL string can be passed, but if it is a string it has to be formatted like a URL (e.g., "/path/to/object", "keys/of/object"). Strings will be converted to an array
-// Number - currently this is the number to go to within the array, ergo into the object, to read/write
-// ... either a number or null must be provided. If null is provided the number will then tbe the length of the array (-1, of course)
-// Callback - this is the callback we'll pass. This call back will perform the desired operation
+// ... either an array or URL string can be passed, but if it is a string it has to be
+// ... formatted like a URL (e.g., "/path/to/object", "keys/of/object"). Strings will be
+// ...converted to an array
+// Number - currently this is the number to go to within the array, ergo into the object,
+// ... to read/write
+// ... either a number or null must be provided. If null is provided the number will then the
+// ... the length of the array (-1, of course)
+// Callback - this is the callback we'll pass. This call back will perform the
+// ... desired operation
 // ... at the desired location in the object
 ```
 

@@ -141,7 +141,7 @@ console.log(creator);
 ```
 The file `json-reader.js` is ready to run in your command line console/terminal using Node, or in the console of your favorite web browser! (it better be Chrome) ;)
 
-Here's a working example. Keep in mind, the example is very simplified.
+Here's a working example. Keep in mind, the example is very simplified: [Example in Codepen](http://codepen.io/piecedigital/pen/NGRPzR)
 
 # Thanks for viewing! :)
 ### Checkout my links below

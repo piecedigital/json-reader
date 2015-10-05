@@ -9,7 +9,7 @@ This has been done before, I'm certain, but I was glad that I came up with it on
 
 ## Let's dive into what it does.
 
-As your read through the following, do note that the comments to much of the explaining.
+As your read through the following, do note that the comments do much of the explaining.
 
 Now consider the following object:
 ```javascript
